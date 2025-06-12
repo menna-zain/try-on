@@ -28,7 +28,7 @@ export default function Register() {
         navigate("/login");
       })
       .catch((err) => {
-        setErrMsg(err.response.data.status);
+        setErrMsg(err.response.data.message);
       })
       .finally(() => {
         setIsloading(false);
