@@ -277,23 +277,23 @@ export default function Home() {
       <div className="bg-[#F8F9FA] px-10">
         {/* banar1 */}
         <section className="p-5 my-10 mt-20 ">
-          <Slider {...settings} className="w-full p-5 mx-auto">
-            <div className="w-full">
+          <Slider {...settings} className="w-11/12 p-5 mx-auto">
+            <div >
               <img src={banarkids} alt="1" className="w-full" />
             </div>
-            <div className="w-full">
+            <div >
               <img src={banarskincare} alt="2" className="w-full" />
             </div>
-            <div className="w-full">
+            <div >
               <img src={ramadanblack} alt="3" className="w-full" />
             </div>
-            <div className="w-full">
+            <div>
               <img src={ramadanblue} alt="4" className="w-full" />
             </div>
-            <div className="w-full">
+            <div>
               <img src={ramadanpink} alt="5" className="w-full" />
             </div>
-            <div className="w-full">
+            <div>
               <img src={mothereid} alt="6" className="w-full" />
             </div>
           </Slider>
@@ -325,8 +325,8 @@ export default function Home() {
 
         {/* //! BANAR 2 */}
         <section className="p-5 my-10 ">
-          <Slider {...banarTwoSettings} className="p-5">
-            <div className="w-full">
+          <Slider {...banarTwoSettings} className="w-11/12 p-5 mx-auto">
+            <div>
               <img src={mothereid} alt="6" className="w-full" />
             </div>
           </Slider>
