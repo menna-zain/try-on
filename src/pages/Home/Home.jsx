@@ -9,12 +9,18 @@ import Cookies from "js-cookie";
 import SubCategoriesCard from "../../Components/SubCategoriesCard/SubCategoriesCard";
 import LoadingScreen from "../../Components/LoadingScreen/Loading.Screen";
 
-import banarkids from "../../assets/images/banarkids.jpg";
-import banarskincare from "../../assets/images/banarskincare.jpg";
-import ramadanblack from "../../assets/images/ramadanblack.jpg";
-import ramadanblue from "../../assets/images/ramadanblue.jpg";
-import ramadanpink from "../../assets/images/ramadanbink.jpg";
-import mothereid from "../../assets/images/mothereid.jpg";
+import banarkids from "../../assets/images/banarkids1.jpg";
+import banarskincare from "../../assets/images/banarkids2.jpg";
+import ramadanblack from "../../assets/images/banarwomen1.jpg";
+import ramadanblue from "../../assets/images/banarwomen2.jpg";
+import ramadanpink from "../../assets/images/banarmen1.jpg";
+import mothereid from "../../assets/images/banarmen2.jpg";
+// import banarkids from "../../assets/images/banarkids.jpg";
+// import banarskincare from "../../assets/images/banarskincare.jpg";
+// import ramadanblack from "../../assets/images/ramadanblack.jpg";
+// import ramadanblue from "../../assets/images/ramadanblue.jpg";
+// import ramadanpink from "../../assets/images/ramadanbink.jpg";
+// import mothereid from "../../assets/images/mothereid.jpg";
 import Footer from "../../Components/Footer/Footer";
 import ProductSliderSection from "../../Components/HomeProductSlider/HomeProductSlider";
 
@@ -270,24 +276,24 @@ export default function Home() {
     <>
       <div className="bg-[#F8F9FA] px-10">
         {/* banar1 */}
-        <section className="p-5 mx-auto my-10">
-          <Slider {...settings} className="p-5 ">
-            <div className="w-3/4">
+        <section className="p-5 my-10 mt-20 ms-12">
+          <Slider {...settings} className="w-full p-5 mx-auto">
+            <div className="w-full">
               <img src={banarkids} alt="1" />
             </div>
-            <div className="w-3/4">
+            <div className="w-full">
               <img src={banarskincare} alt="2" />
             </div>
-            <div className="w-3/4">
+            <div className="w-full">
               <img src={ramadanblack} alt="3" />
             </div>
-            <div className="w-3/4">
+            <div className="w-full">
               <img src={ramadanblue} alt="4" />
             </div>
-            <div className="w-3/4">
+            <div className="w-full">
               <img src={ramadanpink} alt="5" />
             </div>
-            <div className="w-3/4">
+            <div className="w-full">
               <img src={mothereid} alt="6" />
             </div>
           </Slider>
@@ -318,9 +324,9 @@ export default function Home() {
         />
 
         {/* //! BANAR 2 */}
-        <section className="m-5 mx-auto ">
-          <Slider {...banarTwoSettings} className="p-5 ">
-            <div className="w-3/4">
+        <section className="p-5 my-10 ms-12 ">
+          <Slider {...banarTwoSettings} className="p-5">
+            <div className="w-full">
               <img src={mothereid} alt="6" />
             </div>
           </Slider>

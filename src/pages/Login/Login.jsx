@@ -83,7 +83,7 @@ export default function Login() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center ">
+      <div className="flex flex-col items-center justify-center h-screen">
         <div className="flex items-center justify-center w-full max-w-2xl px-8 space-y-6 text-black md:flex-row md:space-y-0 md:space-x-10">
           <div className="w-3/4 px-5 border my-28 rounded-xl md:text-left">
             <h2 className="my-5 text-xl font-bold capitalize font-heading">

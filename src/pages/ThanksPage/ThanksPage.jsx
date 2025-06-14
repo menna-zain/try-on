@@ -5,7 +5,7 @@ import Footer from "../../Components/Footer/Footer";
 export default function ThanksPage() {
   return (
     <>
-    <div className="flex items-center justify-center p-4 my-36">
+    <div className="flex items-center justify-center h-screen">
       <div className="w-full max-w-md p-8 border shadow-md rounded-2xl">
         <div className="flex items-center gap-2">
         <h2 className="mb-2 text-3xl font-bold font-heading">Success</h2>
