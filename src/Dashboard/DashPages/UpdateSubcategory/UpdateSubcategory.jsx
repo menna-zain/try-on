@@ -89,7 +89,7 @@ export default function UpdateSubCategory() {
         }
       );
       toast.success("Subcategory updated");
-      navigate("/dashboard/categories&subcategries");
+      navigate("/dashboard/categories");
     } catch (error) {
       toast.error(error?.response?.data?.message || "Update failed");
     } finally {
