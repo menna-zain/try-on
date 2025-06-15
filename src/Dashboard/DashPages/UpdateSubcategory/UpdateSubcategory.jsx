@@ -24,8 +24,10 @@ export default function UpdateSubCategory() {
     async function fetchData() {
       try {
         const [subRes, catRes] = await Promise.all([
-          axios.get(`https://api.tryon-store.xyz/api/v1/subcategories/${id}`),
-          axios.get("https://api.tryon-store.xyz/api/v1/categories", {
+          axios.get(`https://www.tryon-store.xyz/api/v1/subcategories/${id}`),
+          // axios.get(`https://api.tryon-store.xyz/api/v1/subcategories/${id}`),
+          axios.get("https://www.tryon-store.xyz/api/v1/categories", {
+          // axios.get("https://api.tryon-store.xyz/api/v1/categories", {
             params: { sort: "createdAt", fields: "name,slug" },
           }),
         ]);
@@ -79,7 +81,8 @@ export default function UpdateSubCategory() {
     try {
       setIsLoading(true);
       await axios.patch(
-        `https://api.tryon-store.xyz/api/v1/subcategories/${id}`,
+        `https://www.tryon-store.xyz/api/v1/subcategories/${id}`,
+        // `https://api.tryon-store.xyz/api/v1/subcategories/${id}`,
         formData,
         {
           headers: {

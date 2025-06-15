@@ -33,7 +33,8 @@ export default function OrdersTable({ orders }) {
 
     try {
       await axios.patch(
-        `https://api.tryon-store.xyz/api/v1/orders/${orderId}/deliver`,
+        `https://www.tryon-store.xyz/api/v1/orders/${orderId}/deliver`,
+        // `https://api.tryon-store.xyz/api/v1/orders/${orderId}/deliver`,
         {},
         {
           headers: {
@@ -64,7 +65,8 @@ export default function OrdersTable({ orders }) {
 
     try {
       await axios.patch(
-        `https://api.tryon-store.xyz/api/v1/orders/${orderId}/pay`,
+        `https://www.tryon-store.xyz/api/v1/orders/${orderId}/pay`,
+        // `https://api.tryon-store.xyz/api/v1/orders/${orderId}/pay`,
         {},
         {
           headers: {

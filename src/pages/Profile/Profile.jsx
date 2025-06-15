@@ -20,7 +20,8 @@ export default function ProfileForm() {
     setIsLoading(true);
     try {
       const { data } = await axios.get(
-        "https://api.tryon-store.xyz/api/v1/users/Me",
+        "https://www.tryon-store.xyz/api/v1/users/Me",
+        // "https://api.tryon-store.xyz/api/v1/users/Me",
         {
           headers: { Authorization: `Bearer ${Cookies.get("token")}` },
         }
@@ -65,7 +66,8 @@ export default function ProfileForm() {
     setIsLoading(true);
     try {
       const response = await axios.patch(
-        "https://api.tryon-store.xyz/api/v1/users/updateMe",
+        "https://www.tryon-store.xyz/api/v1/users/updateMe",
+        // "https://api.tryon-store.xyz/api/v1/users/updateMe",
         formData,
         {
           headers: {

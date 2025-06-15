@@ -60,7 +60,8 @@ export default function ProductDetails() {
   async function getProductDetails() {
     setIsLoading(true);
     const { data } = await axios.get(
-      "https://api.tryon-store.xyz/api/v1/products/" + id
+      "https://www.tryon-store.xyz/api/v1/products/" + id
+      // "https://api.tryon-store.xyz/api/v1/products/" + id
     );
     console.log("bar ",data.data.ratingsBreakdown);
     console.log("comment ",data.data.product.reviews);

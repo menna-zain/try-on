@@ -12,7 +12,8 @@ const ProductCategorySelector = ({ product, setProduct }) => {
     async function fetchCategories() {
       try {
         const response = await axios.get(
-          "https://api.tryon-store.xyz/api/v1/categories",
+          "https://www.tryon-store.xyz/api/v1/categories",
+          // "https://api.tryon-store.xyz/api/v1/categories",
           {
             params: {
               sort: "createdAt",
@@ -36,7 +37,8 @@ const ProductCategorySelector = ({ product, setProduct }) => {
       setLoadingSubcategories(true);
       try {
         const response = await axios.get(
-          `https://api.tryon-store.xyz/api/v1/categories/${selectedCategoryId}/subcategories`
+          `https://www.tryon-store.xyz/api/v1/categories/${selectedCategoryId}/subcategories`
+          // `https://api.tryon-store.xyz/api/v1/categories/${selectedCategoryId}/subcategories`
         );
         setSubcategories(response.data.data);
         console.log("subcategories:",response.data.data);

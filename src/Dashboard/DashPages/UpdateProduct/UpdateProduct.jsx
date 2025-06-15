@@ -35,7 +35,8 @@ const UpdateProduct = () => {
     async function fetchProduct() {
       try {
         const { data } = await axios.get(
-          `https://api.tryon-store.xyz/api/v1/products/${id}`,
+          `https://www.tryon-store.xyz/api/v1/products/${id}`,
+          // `https://api.tryon-store.xyz/api/v1/products/${id}`,
           {
             headers: {
               Authorization: `Bearer ${Cookies.get("token")}`,
@@ -119,7 +120,8 @@ const UpdateProduct = () => {
     setIsLoading(true);
     try {
       const { data } = await axios.patch(
-        `https://api.tryon-store.xyz/api/v1/products/${id}`,
+        `https://www.tryon-store.xyz/api/v1/products/${id}`,
+        // `https://api.tryon-store.xyz/api/v1/products/${id}`,
         formData,
         {
           headers: {
@@ -289,7 +291,8 @@ const UpdateProduct = () => {
                       typeof imgCover === "string"
                         ? imgCover.startsWith("http")
                           ? imgCover
-                          : `https://api.tryon-store.xyz/${imgCover}`
+                          : `https://www.tryon-store.xyz/${imgCover}`
+                          // : `https://api.tryon-store.xyz/${imgCover}`
                         : URL.createObjectURL(imgCover)
                     }
                     alt="Cover"
@@ -339,7 +342,8 @@ const UpdateProduct = () => {
                         src={
                           img.startsWith("http")
                             ? img
-                            : `https://api.tryon-store.xyz/${img}`
+                            : `https://www.tryon-store.xyz/${img}`
+                            // : `https://api.tryon-store.xyz/${img}`
                         }
                         alt="Old"
                         className="w-full "

@@ -18,7 +18,8 @@ const Products = () => {
     setIsLoading(true);
     try {
       const { data } = await axios.get(
-        `https://api.tryon-store.xyz/api/v1/products?limit=5&page=${page}`,
+        `https://www.tryon-store.xyz/api/v1/products?limit=5&page=${page}`,
+        // `https://api.tryon-store.xyz/api/v1/products?limit=5&page=${page}`,
         {
           headers: {
             Authorization: `Bearer ${Cookies.get("token")}`,
@@ -44,7 +45,8 @@ const Products = () => {
   async function deleteProduct(productId) {
     try {
       const res = await axios.delete(
-        `https://api.tryon-store.xyz/api/v1/products/${productId}`,
+        `https://www.tryon-store.xyz/api/v1/products/${productId}`,
+        // `https://api.tryon-store.xyz/api/v1/products/${productId}`,
         {
           headers: {
             Authorization: `Bearer ${Cookies.get("token")}`,

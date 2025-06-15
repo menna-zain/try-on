@@ -19,7 +19,8 @@ export default function WishList() {
     setIsLoading(true);
     try {
       const { data } = await axios.get(
-        "https://api.tryon-store.xyz/api/v1/wishlist",
+        "https://www.tryon-store.xyz/api/v1/wishlist",
+        // "https://api.tryon-store.xyz/api/v1/wishlist",
         {
           headers: {
             Authorization: `Bearer ${Cookies.get("token")}`,
@@ -36,7 +37,8 @@ export default function WishList() {
 
   async function deleteWishProduct(productId) {
     const { data } = await axios.delete(
-      `https://api.tryon-store.xyz/api/v1/wishlist/${productId}`,
+      `https://www.tryon-store.xyz/api/v1/wishlist/${productId}`,
+      // `https://api.tryon-store.xyz/api/v1/wishlist/${productId}`,
       {
         headers: {
           Authorization: `Bearer ${Cookies.get("token")}`,

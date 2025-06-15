@@ -23,7 +23,8 @@ export default function NewPassword() {
     setErrMsg("");
     axios
       .patch(
-        `https://api.tryon-store.xyz/api/v1/users/resetPassword/${id}`,
+        `https://www.tryon-store.xyz/api/v1/users/resetPassword/${id}`,
+        // `https://api.tryon-store.xyz/api/v1/users/resetPassword/${id}`,
         values
       )
       .then((res) => {

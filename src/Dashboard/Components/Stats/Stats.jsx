@@ -24,7 +24,8 @@ export default function Stats() {
     async function getStats() {
       // setIsLoading(true);
       const { data } = await axios.get(
-        "https://api.tryon-store.xyz/api/v1/analystics/dashboard",
+        "https://www.tryon-store.xyz/api/v1/analystics/dashboard",
+        // "https://api.tryon-store.xyz/api/v1/analystics/dashboard",
         {
           headers: {
             Authorization: `Bearer ${Cookies.get("token")}`,

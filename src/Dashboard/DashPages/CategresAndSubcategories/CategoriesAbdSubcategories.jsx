@@ -19,7 +19,8 @@ const CategoriesAndSubcategories = () => {
     setIsLoading(true);
     try {
       const { data } = await axios.get(
-        "https://api.tryon-store.xyz/api/v1/categories",
+        "https://www.tryon-store.xyz/api/v1/categories",
+        // "https://api.tryon-store.xyz/api/v1/categories",
         {
           headers: {
             Authorization: `Bearer ${Cookies.get("token")}`,
@@ -38,7 +39,8 @@ const CategoriesAndSubcategories = () => {
     setIsLoading(true);
     try {
       const { data } = await axios.get(
-        "https://api.tryon-store.xyz/api/v1/subcategories",
+        "https://www.tryon-store.xyz/api/v1/subcategories",
+        // "https://api.tryon-store.xyz/api/v1/subcategories",
         {
           headers: {
             Authorization: `Bearer ${Cookies.get("token")}`,
@@ -63,7 +65,8 @@ async function deleteCategory(categoryId) {
   console.log("Deleting category with ID:", categoryId);
   try {
     const { data } = await axios.delete(
-      `https://api.tryon-store.xyz/api/v1/categories/${categoryId}`,
+      `https://www.tryon-store.xyz/api/v1/categories/${categoryId}`,
+      // `https://api.tryon-store.xyz/api/v1/categories/${categoryId}`,
       {
         headers: {
           Authorization: `Bearer ${Cookies.get("token")}`,
@@ -87,7 +90,8 @@ async function deleteSubCategory(SubCategoryId) {
   console.log("Deleting subcategory with ID:", SubCategoryId);
   try {
     const { data } = await axios.delete(
-      `https://api.tryon-store.xyz/api/v1/subcategories/${SubCategoryId}`,
+      `https://www.tryon-store.xyz/api/v1/subcategories/${SubCategoryId}`,
+      // `https://api.tryon-store.xyz/api/v1/subcategories/${SubCategoryId}`,
       {
         headers: {
           Authorization: `Bearer ${Cookies.get("token")}`,

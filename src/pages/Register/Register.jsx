@@ -23,7 +23,8 @@ export default function Register() {
     setErrMsg("");
     setIsloading(true);
     axios
-      .post("https://api.tryon-store.xyz/api/v1/users/signup", values)
+      .post("https://www.tryon-store.xyz/api/v1/users/signup", values)
+      // .post("https://api.tryon-store.xyz/api/v1/users/signup", values)
       .then(({ data }) => {
         navigate("/login");
       })

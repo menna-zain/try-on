@@ -16,7 +16,8 @@ export async function addProductToCart({
     setCartLoading(true); // تشغيل حالة التحميل
 
     const { data } = await axios.post(
-      "https://api.tryon-store.xyz/api/v1/cart",
+      "https://www.tryon-store.xyz/api/v1/cart",
+      // "https://api.tryon-store.xyz/api/v1/cart",
       {
         productId,
         color,

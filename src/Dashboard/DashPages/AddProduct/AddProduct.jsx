@@ -73,7 +73,8 @@ const AddProduct = () => {
 
     try {
       const { data } = await axios.post(
-        "https://api.tryon-store.xyz/api/v1/products",
+        "https://www.tryon-store.xyz/api/v1/products",
+        // "https://api.tryon-store.xyz/api/v1/products",
         formData,
         {
           headers: {

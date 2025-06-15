@@ -67,7 +67,8 @@ export default function DashProfile() {
     setIsLoading(true);
     try {
       const response = await axios.patch(
-        "https://api.tryon-store.xyz/api/v1/users/updateMe",
+        "https://www.tryon-store.xyz/api/v1/users/updateMe",
+        // "https://api.tryon-store.xyz/api/v1/users/updateMe",
         formData,
         {
           headers: {

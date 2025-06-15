@@ -22,7 +22,8 @@ export default function ForgetPassword() {
     setIsloading(true);
     setErrMsg("");
     axios
-      .post("https://api.tryon-store.xyz/api/v1/users/forgotPassword", values)
+      .post("https://www.tryon-store.xyz/api/v1/users/forgotPassword", values)
+      // .post("https://api.tryon-store.xyz/api/v1/users/forgotPassword", values)
       .then((res) => {
         if (res.data.status == "success") {
         navigate("/newpassword")

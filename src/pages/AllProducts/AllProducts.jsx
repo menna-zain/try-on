@@ -26,11 +26,14 @@ export default function AllProducts() {
 
       let baseUrl = "";
       if (type === "sales") {
-        baseUrl = `https://api.tryon-store.xyz/api/v1/products/onSaleProducts?page=${page}`;
+        baseUrl = `https://www.tryon-store.xyz/v1/products/onSaleProducts?page=${page}`;
+        // baseUrl = `https://api.tryon-store.xyz/api/v1/products/onSaleProducts?page=${page}`;
       } else if (type === "new") {
-        baseUrl = `https://api.tryon-store.xyz/api/v1/products/newProducts?page=${page}`;
+        baseUrl = `https://www.tryon-store.xyz/api/v1/products/newProducts?page=${page}`;
+        // baseUrl = `https://api.tryon-store.xyz/api/v1/products/newProducts?page=${page}`;
       } else {
-        baseUrl = `https://api.tryon-store.xyz/api/v1/categories/${type}/products?limit=5&page=${page}`;
+        baseUrl = `https://www.tryon-store.xyz/api/v1/categories/${type}/products?limit=5&page=${page}`;
+        // baseUrl = `https://api.tryon-store.xyz/api/v1/categories/${type}/products?limit=5&page=${page}`;
       }
 
       const params = new URLSearchParams();

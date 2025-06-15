@@ -31,7 +31,8 @@ export default function Cart() {
   async function getLoggedUserCart() {
     setIsLoading(true);
     const { data } = await axios.get(
-      "https://api.tryon-store.xyz/api/v1/cart",
+      "https://www.tryon-store.xyz/api/v1/cart",
+      // "https://api.tryon-store.xyz/api/v1/cart",
       {
         headers: {
           Authorization: `Bearer ${Cookies.get("token")}`,

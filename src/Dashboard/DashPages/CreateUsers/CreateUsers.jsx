@@ -21,7 +21,8 @@ export default function CreateUser() {
     e.preventDefault();
 
     try {
-      await axios.post("https://api.tryon-store.xyz/api/v1/users", form);
+      await axios.post("https://www.tryon-store.xyz/api/v1/users", form);
+      // await axios.post("https://api.tryon-store.xyz/api/v1/users", form);
       toast.success("User registered successfully!");
     } catch (err) {
       console.error(err);

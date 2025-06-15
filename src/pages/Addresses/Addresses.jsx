@@ -19,7 +19,8 @@ export default function Addresses() {
     setIsLoading(true);
     try {
       const { data } = await axios.get(
-        "https://api.tryon-store.xyz/api/v1/addresses",
+        "https://www.tryon-store.xyz/api/v1/addresses",
+        // "https://api.tryon-store.xyz/api/v1/addresses",
         {
           headers: {
             Authorization: `Bearer ${Cookies.get("token")}`,
@@ -37,7 +38,8 @@ export default function Addresses() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://api.tryon-store.xyz/api/v1/addresses/${id}`, {
+      await axios.delete(`https://www.tryon-store.xyz/api/v1/addresses/${id}`, {
+      // await axios.delete(`https://api.tryon-store.xyz/api/v1/addresses/${id}`, {
         headers: {
           Authorization: `Bearer ${Cookies.get("token")}`,
         },

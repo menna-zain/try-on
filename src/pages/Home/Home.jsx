@@ -27,6 +27,7 @@ import ProductSliderSection from "../../Components/HomeProductSlider/HomeProduct
 export default function Home() {
   window.scroll(0, 0);
 
+  const baseUrl = "www.tryon-store.xyz";
   const [loadingCount, setLoadingCount] = useState(0);
   const isLoading = loadingCount > 0;
 
@@ -117,7 +118,8 @@ export default function Home() {
     startLoading();
     try {
       const { data } = await axios.get(
-        "https://api.tryon-store.xyz/api/v1/subcategories",
+        "https://www.tryon-store.xyz/api/v1/subcategories",
+        // "https://api.tryon-store.xyz/api/v1/subcategories",
         {
           headers: {
             Authorization: `Bearer ${Cookies.get("token")}`,
@@ -142,7 +144,8 @@ export default function Home() {
     startLoading();
     try {
       const { data } = await axios.get(
-        "https://api.tryon-store.xyz/api/v1/products/onSaleProducts?limit=12",
+        "https://www.tryon-store.xyz/api/v1/products/onSaleProducts?limit=12",
+        // "https://api.tryon-store.xyz/api/v1/products/onSaleProducts?limit=12",
         {
           headers: {
             Authorization: `Bearer ${Cookies.get("token")}`,
@@ -164,7 +167,8 @@ export default function Home() {
     startLoading();
     try {
       const { data } = await axios.get(
-        "https://api.tryon-store.xyz/api/v1/products/newProducts",
+        "https://www.tryon-store.xyz/api/v1/products/newProducts",
+        // "https://api.tryon-store.xyz/api/v1/products/newProducts",
         {
           headers: {
             Authorization: `Bearer ${Cookies.get("token")}`,
@@ -196,7 +200,8 @@ export default function Home() {
     startLoading();
     try {
       const { data } = await axios.get(
-        "https://api.tryon-store.xyz/api/v1/categories",
+        "https://www.tryon-store.xyz/api/v1/categories",
+        // "https://api.tryon-store.xyz/api/v1/categories",
         {
           headers: {
             Authorization: `Bearer ${Cookies.get("token")}`,
@@ -232,7 +237,8 @@ export default function Home() {
     startLoading();
     try {
       const { data } = await axios.get(
-        `https://api.tryon-store.xyz/api/v1/categories/${categoryId}/products?limit=${limit}`,
+        `https://www.tryon-store.xyz/api/v1/categories/${categoryId}/products?limit=${limit}`,
+        // `https://api.tryon-store.xyz/api/v1/categories/${categoryId}/products?limit=${limit}`,
         {
           headers: {
             Authorization: `Bearer ${Cookies.get("token")}`,

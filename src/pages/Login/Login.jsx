@@ -27,7 +27,8 @@ export default function Login() {
     setIsloading(true);
     setErrMsg("");
     axios
-      .post("https://api.tryon-store.xyz/api/v1/users/login", values)
+      .post("https://www.tryon-store.xyz/api/v1/users/login", values)
+      // .post("https://api.tryon-store.xyz/api/v1/users/login", values)
       .then((res) => {
         if (res.data.status == "success") {
           Cookies.set("token", res.data.token, {

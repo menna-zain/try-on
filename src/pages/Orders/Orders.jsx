@@ -18,7 +18,8 @@ export default function Orders() {
   async function getLoggedUserOrders() {
     setIsLoading(true);
     const { data } = await axios.get(
-      "https://api.tryon-store.xyz/api/v1/orders",
+      "https://www.tryon-store.xyz/api/v1/orders",
+      // "https://api.tryon-store.xyz/api/v1/orders",
       {
         headers: {
           Authorization: `Bearer ${Cookies.get("token")}`,

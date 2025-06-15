@@ -26,7 +26,8 @@ export default function Payment() {
     setIsLoading(true);
     try {
       const { data } = await axios.get(
-        "https://api.tryon-store.xyz/api/v1/addresses",
+        "https://www.tryon-store.xyz/api/v1/addresses",
+        // "https://api.tryon-store.xyz/api/v1/addresses",
         {
           headers: {
             Authorization: `Bearer ${Cookies.get("token")}`,
@@ -64,7 +65,8 @@ export default function Payment() {
     try {
       if (paymentMethod === "visa") {
         const { data } = await axios.get(
-          `https://api.tryon-store.xyz/api/v1/orders/checkout-session/${id}`,
+          `https://www.tryon-store.xyz/api/v1/orders/checkout-session/${id}`,
+          // `https://api.tryon-store.xyz/api/v1/orders/checkout-session/${id}`,
           {
             headers: {
               Authorization: `Bearer ${Cookies.get("token")}`,
@@ -79,7 +81,8 @@ export default function Payment() {
         }
       } else {
         await axios.post(
-          `https://api.tryon-store.xyz/api/v1/orders/${id}`,
+          `https://www.tryon-store.xyz/api/v1/orders/${id}`,
+          // `https://api.tryon-store.xyz/api/v1/orders/${id}`,
           orderData,
           {
             headers: {

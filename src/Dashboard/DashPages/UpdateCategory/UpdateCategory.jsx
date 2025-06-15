@@ -16,7 +16,8 @@ export default function EditCategory() {
     async function fetchCategory() {
       try {
         const { data } = await axios.get(
-          `https://api.tryon-store.xyz/api/v1/categories/${id}`,
+          `https://www.tryon-store.xyz/api/v1/categories/${id}`,
+          // `https://api.tryon-store.xyz/api/v1/categories/${id}`,
           {
             headers: {
               Authorization: `Bearer ${Cookies.get("token")}`,
@@ -42,7 +43,8 @@ export default function EditCategory() {
 
     try {
       await axios.patch(
-        `https://api.tryon-store.xyz/api/v1/categories/${id}`,
+        `https://www.tryon-store.xyz/api/v1/categories/${id}`,
+        // `https://api.tryon-store.xyz/api/v1/categories/${id}`,
         {
           name: categoryName,
         },

@@ -18,7 +18,8 @@ export default function AddCategory() {
     async function fetchCategories() {
       try {
         const response = await axios.get(
-          "https://api.tryon-store.xyz/api/v1/categories",
+          "https://www.tryon-store.xyz/api/v1/categories",
+          // "https://api.tryon-store.xyz/api/v1/categories",
           {
             params: {
               sort: "createdAt",
@@ -52,7 +53,8 @@ export default function AddCategory() {
     setIsLoading(true);
     try {
       const { data } = await axios.post(
-        "https://api.tryon-store.xyz/api/v1/categories",
+        "https://www.tryon-store.xyz/api/v1/categories",
+        // "https://api.tryon-store.xyz/api/v1/categories",
         { name: categoryName },
         {
           headers: {
@@ -96,7 +98,8 @@ export default function AddCategory() {
     setIsLoading(true);
     try {
       await axios.post(
-        "https://api.tryon-store.xyz/api/v1/subcategories",
+        "https://www.tryon-store.xyz/api/v1/subcategories",
+        // "https://api.tryon-store.xyz/api/v1/subcategories",
         formData,
         {
           headers: {
