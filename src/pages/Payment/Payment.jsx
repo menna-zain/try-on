@@ -64,7 +64,7 @@ export default function Payment() {
 
     try {
       if (paymentMethod === "visa") {
-        const { data } = await axios.get(
+        const { data } = await axios.post(
           `https://www.tryon-store.xyz/api/v1/orders/checkout-session/${id}`,
           // `https://api.tryon-store.xyz/api/v1/orders/checkout-session/${id}`,
           {
